@@ -1,0 +1,16 @@
+.latihan-html .card-parent {
+    padding: 8px;
+}
+.latihan-html .card {
+    padding: 0px;
+}
+.latihan-html .card textarea {
+    resize: none;
+}
+.latihan-html #dropdownInterested {
+    margin-bottom: 8px;
+}
+
+#divChangeBgLg .btn-primary {
+    margin-bottom: 4px;
+}
