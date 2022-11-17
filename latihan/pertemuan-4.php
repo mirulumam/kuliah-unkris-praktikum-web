@@ -50,7 +50,7 @@
 					</div>
 				</div>
 				<div class="card card-square mt-2">
-				<div class="card-header">Latihan 7.3 | Tanggalan</div>
+					<div class="card-header">Latihan 7.3 | Tanggalan</div>
 					<div class="card-body">
 						<?php echo date("m-F-Y, g:i:s a"); ?>
 					</div>
