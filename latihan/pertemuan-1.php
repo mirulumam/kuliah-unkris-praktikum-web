@@ -1,5 +1,5 @@
 <?php
-	include_once("__header.php");
+	include_once("..\__header.php");
 ?>
 
 		<p>Pertemuan 1</p>
@@ -98,7 +98,7 @@
 								<input type="submit" value="Kirim" name="buttonSubmit">
 								<input type="reset" value="Ulangi" name="buttonreset">
 								<input type="button" value="Batal" name="buttonCancel">
-								<input type="image" name="buttonImage" img src=".\assets/genshin.png" width="100%">
+								<input type="image" name="buttonImage" img src="..\assets/genshin.png" width="100%">
 							</div>
 						</div>
 					</div>
@@ -147,5 +147,5 @@
 		<hr>
 
 <?php
-	include_once("__footer.php")
+	include_once("..\__footer.php")
 ?>

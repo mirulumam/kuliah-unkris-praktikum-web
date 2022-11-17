@@ -1,5 +1,5 @@
 <?php
-	include_once("__header.php");
+	include_once("..\__header.php");
 
 	echo "<div class=\"row\"><div class=\"col-lg-6 card-parent\">";
 	if ( isset($_GET["n"]) && isset($_GET["e"]) ) {
@@ -11,5 +11,5 @@
 	}
 	echo "</div></div>";
 
-	include_once("__footer.php");
+	include_once("..\__footer.php");
 ?>

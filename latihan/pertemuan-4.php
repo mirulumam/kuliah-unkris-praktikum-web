@@ -1,5 +1,5 @@
 <?php
-	include_once("__header.php");
+	include_once("..\__header.php");
 ?>
 
 		<p>Pertemuan 4</p>
@@ -208,5 +208,5 @@
 		</div>
 
 <?php
-	include_once("__footer.php")
+	include_once("..\__footer.php")
 ?>
