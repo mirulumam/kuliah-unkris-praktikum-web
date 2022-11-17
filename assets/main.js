@@ -144,7 +144,7 @@ let testFormInput = () => {
         return;
     }
 
-    if ( isNaN(div1) || div1 == undefined || div1.length < 1 ) {
+    if ( div1 == undefined || isNaN(div1.value) || div1.value.length < 1 ) {
         div2.value = "Bilangan tidak valid";
     } else {
         div2.value = div1.value % 2 == 0 ? "bilangan genap" : "bilangan ganjil";
