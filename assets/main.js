@@ -170,3 +170,71 @@ let changeLg = (color) => {
 
     div.style.color = color;
 }
+
+let task3ShowResult = (value) => {
+    let p = document.getElementById("pResult");
+
+    if ( p == undefined ) {
+        return;
+    }
+
+    let v = parseInt(value);
+
+    if ( value != undefined && value.length > 0 && isNaN(v) ) {
+        alert("Nilai tidak valid: ");
+        return;
+    }
+
+    if ( v < 0 || v > 100 ) {
+        alert("Mohon input nilai antara 0 - 100");
+        return;
+    }
+
+    if ( v >= 0 && v <= 40 ) {
+        p.innerHTML = "E";
+    } else if ( v >= 41 && v <= 55 ) {
+        p.innerHTML = "D";
+    } else if ( v >= 56 && v <= 60 ) {
+        p.innerHTML = "C";
+    } else if ( v >= 61 && v <= 65 ) {
+        p.innerHTML = "BC";
+    } else if ( v >= 66 && v <= 70 ) {
+        p.innerHTML = "B";
+    } else if ( v >= 71 && v <= 80 ) {
+        p.innerHTML = "BA";
+    } else if ( v >= 81 && v <= 100 ) {
+        p.innerHTML = "A";
+    } else {
+        p.innerHTML = "-"
+    }
+}
+
+let task3Calculate = (o) => {
+    let i1 = document.getElementById("inputValue1");
+    let i2 = document.getElementById("inputValue2");
+    let p = document.getElementById("pResultCalculate");
+
+    if ( i1 == undefined || i2 == undefined || p == undefined ) {
+        return;
+    }
+
+    let v1 = i1.value;
+    let v2 = i2.value;
+
+    if ( isNaN(v1) || isNaN(v2) ) {
+        alert("Angka tidak valid");
+        return;
+    }
+
+    if ( o === "+" ) {
+        p.innerHTML = parseInt(v1) + parseInt(v2);
+    } else if ( o === "-" ) {
+        p.innerHTML = parseInt(v1) - parseInt(v2);
+    } else if ( o === "x" ) {
+        p.innerHTML = parseInt(v1) * parseInt(v2);
+    } else if ( o === "/" ) {
+        p.innerHTML = parseInt(v1) / parseInt(v2);
+    } else {
+        p.innerHTML = "-";
+    }
+}
